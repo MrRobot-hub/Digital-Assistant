@@ -53,9 +53,6 @@ def get_audio():
 
     return said.lower()
 
-
-
-
 def authenticate_google():
 
     creds = None
@@ -159,20 +156,24 @@ def get_date(text):
 
     if day != -1:  # FIXED FROM VIDEO
         return datetime.date(month=month, day=day, year=year)
+      
 def note(text):
     date = datetime.datetime.now()
     file_name = str(date).replace(":","-") + "-note.txt"
     with open(file_name, "w") as f:
         f.write(text)
     os.system(f"leafpad {file_name}")
+    
 def quick_scan():
     os.system("sudo xterm -T QuickScanner -e rkhunter --check")
     
 def pack_info():
     os.system("dpkg --get-selections > installed_packages_info.txt")
+    
 def apps_info():
     os.system("chmod +x apps.sh; bash apps.sh")
 
+# Main 
 WAKE = "hello"
 #Login credentials for google calender
 SERVICE = authenticate_google()
@@ -200,8 +201,7 @@ while True:
                 note(note_text)
                 speak("I've made a note of that")
                 
-        #System scanning
-                
+        #System scanning       
         SCAN_STR = ["scan my system", "check system vulnerabilities", "check rootkits", "check viruses"]
         for phrase in SCAN_STR:
             if phrase in text.lower():
@@ -215,6 +215,7 @@ while True:
                 pack_info()
                 speak("All information saved in txt file check it out")
                 os.system("leafpad installed_packages_info.txt")
+                
         #Show all applications installed
         APP_STR = ["list down all apps", "installed apps", "all installed apps list down"]
         for phrase in APP_STR:
