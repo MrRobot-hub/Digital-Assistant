@@ -3,6 +3,7 @@ A speech recognition application for linux operating system as my final year pro
 
 # Requirements
 Linux OS
+
 Python3
 
 # How to install
@@ -16,4 +17,5 @@ These commands will install all necessary libraries for this application till no
 
 # Run App
 Type this command
+
 python Os_popen.py
