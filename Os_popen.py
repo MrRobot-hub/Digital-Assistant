@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
+Author: Umer Farid, Assasa Hussain
+Final Year Project
 """
-###conda install nwani::portaudio nwani::pyaudio
-##sudo apt install libespeak1
-#sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
-#sudo apt-get install ffmpeg libav-tools
-#sudo pip install pyaudio
-#sudo apt install flite
-#sudo apt install lynis
-#sudo apt install rkhunter
 from __future__ import print_function
 import datetime
 import pytz
