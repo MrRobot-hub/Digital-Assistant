@@ -24,7 +24,11 @@ python Os_popen.py
 Before this week we were studying about pros and cons of linux. Now we've started our final year project Alhamdulellah and almost completed our beginning step of gathering data from different resources and try to convert that into an executeable code and have uploaded our work on github as our this week contribution along with the some installation of necessary tools and libraries.
 
 Os: Linux, Kali
+
 Tools: Anaconda, Spyder, and linux tools for testing
+
 Programming Language: Python 
+
 Hosting Platform: Github
+
 Resources: Different Websites(ask Ubuntu, stack overflow etc), Youtube(Tech with tim)
